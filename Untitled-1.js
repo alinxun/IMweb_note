@@ -114,7 +114,7 @@ Plane.prototype.fly = function(){
 }
 function Fighter(color){
     Plane.call(Plane,color);
-    this.bullets = [];
+    this.bullets = [];  
 }
 Fighter.prototype = new Plane();//打通原型链
 Fighter.prototype.shoot = function(){};

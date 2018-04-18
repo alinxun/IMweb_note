@@ -310,9 +310,9 @@ var GAME = {
     var imgPlane = new Image();
     imgPlane.src = this.plane.icon;
     var self = this;
-    imgPlane.onload = function () {
+    //imgPlane.onload = function () {
       self.planeImg = imgPlane;
-    };
+    //};
   },
 
   //怪物容器
@@ -347,14 +347,14 @@ var GAME = {
     var imgEnemy = new Image();
     imgEnemy.src = opts.enemyIcon;
     var self = this;
-    imgEnemy.onload = function () {
+    //imgEnemy.onload = function () {
       self.imgEnemy = imgEnemy;
-    };
+    //};
     var imgEnemyBoom = new Image();
     imgEnemyBoom.src = opts.enemyBoomIcon;
-    imgEnemyBoom.onload = function () {
+    //imgEnemyBoom.onload = function () {
       self.imgEnemyBoom = imgEnemyBoom;
-    }
+    //}
 
   },
 
@@ -521,3 +521,4 @@ var GAME = {
 
 // 初始化
 GAME.init(CONFIG);
+//GAME.play();
